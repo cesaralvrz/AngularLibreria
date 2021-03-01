@@ -1,0 +1,7 @@
+<div *ngIf="libro.titulo">
+    <h2>{{libro.titulo}}</h2>
+    <p>{{libro.autor}}</p>
+    <p>{{libro.precio}}</p>
+    <p>{{libro.editorial }}</p>
+    <button (click)="emitirEvento(libro)">Comprar</button>
+</div>

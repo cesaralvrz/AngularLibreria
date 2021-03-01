@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Título</th>
+            <th>#Detalle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let libro of listadoLibros, let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{libro.titulo}}</td>
+            <td><a [routerLink]="['/detallelibro', libro.isbn]" > Ver detalle</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <app-detalle-libro (libroComprado)='anadirLibro($event)' [libro]="libroDetalle"></app-detalle-libro>
+<hr> -->
+
